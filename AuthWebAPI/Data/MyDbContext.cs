@@ -7,6 +7,7 @@ namespace AuthWebAPI.Data
     {
         public MyDbContext(DbContextOptions<MyDbContext> options):base(options) { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Entities.Task> Tasks { get; set; }
 
     }
 }
